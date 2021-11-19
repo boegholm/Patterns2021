@@ -19,7 +19,7 @@ namespace Patterns
             };
 
             int result = exp.Accept(new CalcVisitor());
-            Console.WriteLine(exp.Accept(new PrintVisitor()));
+            Console.WriteLine(exp.Accept(new PrettyPrintVisitor()));
             Console.WriteLine(result);
             //var ld = new LightDisplay(new KeyboardInputHandler());
             //ld.Run();

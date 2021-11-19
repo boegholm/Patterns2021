@@ -1,6 +1,6 @@
 ﻿namespace Patterns
 {
-    class PrintVisitor : IVisitor<string>
+    class PrettyPrintVisitor : IVisitor<string>
     {
         public string Visit(IntExpr e) => e.Val.ToString();
 
