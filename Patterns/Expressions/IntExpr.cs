@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Patterns
 {
-    class Value : IExpr
+    class IntExpr : IExpr
     {
         public string Name { get; set; }
         public int Val { get; set; }

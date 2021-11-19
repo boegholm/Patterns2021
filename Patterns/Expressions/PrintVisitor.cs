@@ -1,8 +1,8 @@
 ﻿namespace Patterns
 {
-    class Print : IVisitor<string>
+    class PrintVisitor : IVisitor<string>
     {
-        public string Visit(Value e) => e.Val.ToString();
+        public string Visit(IntExpr e) => e.Val.ToString();
 
         public string Visit(AddExpr e) => e.Lhs.Accept(this) +"+"+ e.Rhs.Accept(this);
 
